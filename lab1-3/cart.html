@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart - Nebula Clothing</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        main {
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .item-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .item-price {
+            color: #ccc;
+        }
+
+        .total {
+            text-align: right;
+            font-size: 22px;
+            margin-top: 30px;
+        }
+
+        .checkout-button {
+            display: block;
+            margin: 30px auto 0;
+            padding: 15px 40px;
+            font-size: 18px;
+            color: white;
+            background-color: #ff5e00;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .checkout-button:hover {
+            background-color: #e04f00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    🛒 Your Cart
+</header>
+
+<main>
+    <div class="cart-item">
+        <div class="item-details">
+            <div class="item-name">Black Hoodie</div>
+            <div class="item-price">$49.99</div>
+        </div>
+        <div>Qty: 1</div>
+    </div>
+
+    <div class="cart-item">
+        <div class="item-details">
+            <div class="item-name">Nebula T-Shirt</div>
+            <div class="item-price">$24.99</div>
+        </div>
+        <div>Qty: 2</div>
+    </div>
+
+    <div class="total">
+        Total: $99.97
+    </div>
+
+    <button class="checkout-button">pay</button>
+</main>
+
+</body>
+</html>
