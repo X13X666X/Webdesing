@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Приклад CSS</title>
+  <!-- 2. Вбудований CSS для абзаців -->
+  <style>
+    p {
+      color: blue;
+      font-size: 24px;
+    }
+
+    /* 4. Селектор по класу */
+    p.redbold {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* 5. Селектор по ідентифікатору */
+    h2#alignright {
+      text-align: right;
+    }
+
+    /* 6. Псевдокласи для посилань */
+    a:link {
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: green;
+    }
+
+    a:visited {
+      color: gray;
+    }
+
+    /* 7. Інші селектори */
+    h3 {
+      color: orange;
+    }
+
+    div p {
+      background-color: lightyellow;
+    }
+
+    ul li:first-child {
+      font-weight: bold;
+    }
+  </style>
+
+  <!-- 3. Підключення зовнішнього CSS -->
+  <link rel="stylesheet" href="lab6.css">
+</head>
+<body>
+
+  <!-- 1. Вбудований CSS у елемент -->
+  <h1 style="color:green; font-size:30px">
+    Це заголовок першого рівня із вбудованим CSS
+  </h1>
+
+  <!-- Абзаци -->
+  <p>Це звичайний абзац.</p>
+  <p class="redbold">Це червоний жирний абзац з класом.</p>
+
+  <!-- Заголовок з ID -->
+  <h2 id="alignright">Цей заголовок вирівняний праворуч</h2>
+
+  <!-- Посилання -->
+  <a href="https://example.com">Це посилання</a>
+
+  <!-- Інші селектори -->
+  <h3>Це заголовок третього рівня</h3>
+
+  <div>
+    <p>Абзац всередині блоку div</p>
+  </div>
+
+  <ul>
+    <li>Перший елемент списку</li>
+    <li>Другий елемент списку</li>
+  </ul>
+
+</body>
+</html>
