@@ -1,0 +1,113 @@
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* 1. Блоки та рядки */
+.bl1 {
+  background-color: coral;
+  padding: 10px;
+  margin: 5px 0;
+}
+.bl2 {
+  background-color: aquamarine;
+  padding: 10px;
+  margin: 5px 0;
+}
+.bl3 {
+  background-color: burlywood;
+  padding: 10px;
+  margin: 5px 0;
+}
+.sl1 {
+  background-color: darkcyan;
+  padding: 5px;
+  display: inline-block;
+  margin: 5px;
+}
+.sl2 {
+  background-color: darkgray;
+  padding: 5px;
+  display: inline-block;
+  margin: 5px;
+}
+.sl3 {
+  background-color: gold;
+  padding: 5px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* 2. Відносне позиціонування */
+.relative {
+  position: relative;
+}
+.bl2.relative {
+  top: 18px;
+  left: 20px;
+}
+.bl3.relative {
+  top: -18px;
+  left: 10px;
+}
+.sl2.relative {
+  left: 120px;
+}
+.sl3.relative {
+  left: -120px;
+}
+
+/* 3. Абсолютне позиціонування */
+.abs-container {
+  position: relative;
+  height: 120px;
+}
+.abs {
+  position: absolute;
+  top: 0;
+  width: 33%;
+  padding: 10px;
+}
+.bl1.abs { left: 0; }
+.bl2.abs { left: 34%; }
+.bl3.abs { left: 67%; }
+
+.abs-line {
+  position: absolute;
+  left: 10px;
+}
+.sl1.abs-line { top: 30px; }
+.sl2.abs-line { top: 50px; }
+.sl3.abs-line { top: 70px; }
+
+/* 4. Фіксований блок */
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: black;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* 5. Плаваючі елементи */
+.float-left {
+  float: left;
+  width: 100px;
+  margin-right: 10px;
+}
+.float-right {
+  float: right;
+  width: 100px;
+  margin-left: 10px;
+}
+
+/* 6. Колонки через обтікання */
+.float-col {
+  float: left;
+  width: 33.33%;
+  height: 200px;
+  box-sizing: border-box;
+}
